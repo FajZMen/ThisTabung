@@ -18,7 +18,8 @@ if st.button("Hitung Volume", type="primary"):
         wait(0.01)
         if percent > 80:
             processing.progress(percent + 1, text=almostload)
-        processing.progress(percent + 1, text=justload)
+        else:
+            processing.progress(percent + 1, text=justload)
     wait(1)
     processing.empty()
     hasil = math.pi*(pow(jarijari,2))*panjang
