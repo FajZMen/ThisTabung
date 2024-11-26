@@ -15,7 +15,7 @@ almostload = "Almost done!"
 if st.button("Hitung Volume", type="primary"):
     processing = st.progress(0, text=justload)
     for percent in range(100):
-        wait(0.01)
+        wait(0.05)
         if percent > 80:
             processing.progress(percent + 1, text=almostload)
         else:
