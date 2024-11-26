@@ -2,14 +2,14 @@ import streamlit as st
 from time import sleep as wait
 import math
 
-st.title("Welcome to Tabung Gajelas by Muhammad Fajar Shodiq")
+st.title("Welcome to :blue[Tabung Gajelas] by Muhammad Fajar Shodiq")
 st.write(
-    "Di web, ini anda bisa Menghitung Volume Tabung! (VERYCOOL!)."
+    "Di web, ini anda bisa Menghitung :blue[Volume Tabung]! (VERYCOOL!)."
 )
 
 jarijari = st.number_input("Masukan jari-jari tabung: ",0)
 panjang = st.number_input("Masukan panjang tabung: ",0)
-justload = "Loading..."
+justload = "Processing your Tabung :P"
 
 if st.button("Hitung Volume", type="primary"):
     processing = st.progress(0, text=justload)
